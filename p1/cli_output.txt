@@ -1,0 +1,216 @@
+C:\Users\abcdu>ibmcloud dev help
+이름:
+   ibmcloud dev - 애플리케이션 작성, 개발, 배치 및 모니터
+
+사용법:
+   ibmcloud dev command [arguments...] [command options]
+
+버전:
+   2.5.0
+
+명령:
+
+DevOps 명령
+   pipeline-get       [베타] 파이프라인 세부사항 가져오기
+   pipeline-log       파이프라인, 단계, 작업 또는 작업 실행에 대한 로그 가져오기
+   pipeline-open      브라우저에서 파이프라인 보기
+   pipeline-run       [베타] 파이프라인 실행
+   toolchain-delete   도구체인 삭제
+   toolchain-get      [베타] 리소스 그룹의 도구 체인 세부사항 가져오기
+   toolchain-open     브라우저에서 도구체인 보기
+   toolchains         [베타] 리소스 그룹의 모든 도구 체인 나열
+
+
+기타 명령
+   help   도움말 표시
+
+
+앱 명령
+   build             로컬 컨테이너에서 애플리케이션 빌드
+   code              애플리케이션에서 코드 다운로드
+   console           애플리케이션에 대해 IBM Cloud 콘솔 열기
+   create            새 애플리케이션을 작성하고 서비스를 추가할 수 있는 옵션 제 공
+   debug             로컬 컨테이너 내에서 애플리케이션 디버그
+   delete            리소스 그룹에서 애플리케이션 삭제
+   deploy            IBM Cloud에 애플리케이션 배치
+   diag              이 명령은 설치된 종속 항목에 대한 버전 정보를 표시합니다.
+   edit              애플리케이션의 서비스 추가 또는 제거
+   enable            [베타] IBM Cloud 파일을 기존 애플리케이션에 추가
+   get-credentials   애플리케이션이 연결된 서비스를 사용하는 데 필요한 신임 정보를 가져옵니다.
+   list              리소스 그룹의 모든 IBM Cloud 애플리케이션 나열
+   run               애플리케이션을 로컬 컨테이너에서 실행
+   shell             로컬 컨테이너에 쉘 열기
+   status            CLI에서 사용하는 컨테이너의 상태 확인
+   stop              컨테이너 중지
+   test              애플리케이션을 로컬 컨테이너에서 테스트
+   view              애플리케이션의 URL 보기
+
+
+명령에 대한 자세한 정보는 'ibmcloud dev help [command]'을(를) 입력하십시오.
+
+글로벌 옵션:
+   --version, -v                  버전 인쇄
+   --help, -h                     도움말 표시
+
+[36;1m#developer-tools[0m Slack 채널에 경험과 피드백을 제공해 주십시오.
+다음을 통해 액세스나 로그인을 신청하십시오. [36;1mhttp://ibm.biz/cli-feedback[0m
+
+
+C:\Users\abcdu>ibmcloud cf
+'cf help' 호출 중...
+
+cf.exe version 6.51.0+2acd15650.2020-04-07, Cloud Foundry command line tool
+Usage: cf.exe [global options] command [arguments...] [command options]
+
+Before getting started:
+  config    login,l      target,t
+  help,h    logout,lo
+
+Application lifecycle:
+  apps,a        run-task,rt    events
+  push,p        logs           set-env,se
+  start,st      ssh            create-app-manifest
+  stop,sp       app            delete,d
+  restart,rs    env,e
+  restage,rg    scale
+
+Services integration:
+  marketplace,m        create-user-provided-service,cups
+  services,s           update-user-provided-service,uups
+  create-service,cs    create-service-key,csk
+  update-service       delete-service-key,dsk
+  delete-service,ds    service-keys,sk
+  service              service-key
+  bind-service,bs      bind-route-service,brs
+  unbind-service,us    unbind-route-service,urs
+
+Route and domain management:
+  routes,r        delete-route    create-domain
+  domains         map-route
+  create-route    unmap-route
+
+Space management:
+  spaces         create-space    set-space-role
+  space-users    delete-space    unset-space-role
+
+Org management:
+  orgs,o       set-org-role
+  org-users    unset-org-role
+
+CLI plugin management:
+  plugins           add-plugin-repo      repo-plugins
+  install-plugin    list-plugin-repos
+
+Commands offered by installed plugins:
+
+Global options:
+  --help, -h                         Show help
+  -v                                 Print API request diagnostics to stdout
+
+TIP: Use 'cf help -a' to see all commands.
+설치하려면 'ibmcloud cf install'을(를) 사용하고 다른 Cloud Foundry CLI 버전을 사용하십시오.
+
+C:\Users\abcdu>ibmcloud cf install
+Cloud foundry CLI 버전 '6.51.0'이(가) 이미 설치되어 있음
+
+C:\Users\abcdu>ibmcloud cf help
+'cf help' 호출 중...
+
+cf.exe version 6.51.0+2acd15650.2020-04-07, Cloud Foundry command line tool
+Usage: cf.exe [global options] command [arguments...] [command options]
+
+Before getting started:
+  config    login,l      target,t
+  help,h    logout,lo
+
+Application lifecycle:
+  apps,a        run-task,rt    events
+  push,p        logs           set-env,se
+  start,st      ssh            create-app-manifest
+  stop,sp       app            delete,d
+  restart,rs    env,e
+  restage,rg    scale
+
+Services integration:
+  marketplace,m        create-user-provided-service,cups
+  services,s           update-user-provided-service,uups
+  create-service,cs    create-service-key,csk
+  update-service       delete-service-key,dsk
+  delete-service,ds    service-keys,sk
+  service              service-key
+  bind-service,bs      bind-route-service,brs
+  unbind-service,us    unbind-route-service,urs
+
+Route and domain management:
+  routes,r        delete-route    create-domain
+  domains         map-route
+  create-route    unmap-route
+
+Space management:
+  spaces         create-space    set-space-role
+  space-users    delete-space    unset-space-role
+
+Org management:
+  orgs,o       set-org-role
+  org-users    unset-org-role
+
+CLI plugin management:
+  plugins           add-plugin-repo      repo-plugins
+  install-plugin    list-plugin-repos
+
+Commands offered by installed plugins:
+
+Global options:
+  --help, -h                         Show help
+  -v                                 Print API request diagnostics to stdout
+
+TIP: Use 'cf help -a' to see all commands.
+설치하려면 'ibmcloud cf install'을(를) 사용하고 다른 Cloud Foundry CLI 버전을 사용하십시오.
+
+C:\Users\abcdu>ibmcloud login
+API 엔드포인트: https://cloud.ibm.com
+지역: us-south
+
+Email> yeomyj99@daum.net
+
+Password>
+인증 중...
+확인
+
+대상 지정된 계정 yunjeong yeom's Account (id)
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (id) 
+리소스 그룹:         대상으로 지정된 리소스 그룹이 없습니다.'ibmcloud target -g RESOURCE_GROUP' 명령을 사용하십시오.
+CF API 엔드포인트:
+조직:
+영역:
+
+새 버전 1.2.3을(를) 사용할 수 있습니다.
+릴리스 정보: https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/tag/v1.2.3
+팁: 업데이트 확인을 사용 안함으로 설정하려면 'ibmcloud config --check-version=false' 명령을 사용하십시오.
+
+업데이트하시겠습니까? [y/N] > N
+
+C:\Users\abcdu>ibmcloud resource groups
+yeomyj99@daum.net(으)로 id 계정에서 모든 리소스 그룹 검색 중...
+확인
+이름           기본 그룹   상태
+MyFirstRG      true        ACTIVE
+
+C:\Users\abcdu>ibmcloud target -g MyFirstRG
+대상 지정된 리소스 그룹 MyFirstRG
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (id) 
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:
+조직:
+영역:
