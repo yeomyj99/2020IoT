@@ -29,7 +29,7 @@ DevOps 명령
    build             로컬 컨테이너에서 애플리케이션 빌드
    code              애플리케이션에서 코드 다운로드
    console           애플리케이션에 대해 IBM Cloud 콘솔 열기
-   create            새 애플리케이션을 작성하고 서비스를 추가할 수 있는 옵션 제 공
+   create            새 애플리케이션을 작성하고 서비스를 추가할 수 있는 옵션 제공
    debug             로컬 컨테이너 내에서 애플리케이션 디버그
    delete            리소스 그룹에서 애플리케이션 삭제
    deploy            IBM Cloud에 애플리케이션 배치
@@ -56,116 +56,16 @@ DevOps 명령
 다음을 통해 액세스나 로그인을 신청하십시오. [36;1mhttp://ibm.biz/cli-feedback[0m
 
 
-C:\Users\abcdu>ibmcloud cf
-'cf help' 호출 중...
-
-cf.exe version 6.51.0+2acd15650.2020-04-07, Cloud Foundry command line tool
-Usage: cf.exe [global options] command [arguments...] [command options]
-
-Before getting started:
-  config    login,l      target,t
-  help,h    logout,lo
-
-Application lifecycle:
-  apps,a        run-task,rt    events
-  push,p        logs           set-env,se
-  start,st      ssh            create-app-manifest
-  stop,sp       app            delete,d
-  restart,rs    env,e
-  restage,rg    scale
-
-Services integration:
-  marketplace,m        create-user-provided-service,cups
-  services,s           update-user-provided-service,uups
-  create-service,cs    create-service-key,csk
-  update-service       delete-service-key,dsk
-  delete-service,ds    service-keys,sk
-  service              service-key
-  bind-service,bs      bind-route-service,brs
-  unbind-service,us    unbind-route-service,urs
-
-Route and domain management:
-  routes,r        delete-route    create-domain
-  domains         map-route
-  create-route    unmap-route
-
-Space management:
-  spaces         create-space    set-space-role
-  space-users    delete-space    unset-space-role
-
-Org management:
-  orgs,o       set-org-role
-  org-users    unset-org-role
-
-CLI plugin management:
-  plugins           add-plugin-repo      repo-plugins
-  install-plugin    list-plugin-repos
-
-Commands offered by installed plugins:
-
-Global options:
-  --help, -h                         Show help
-  -v                                 Print API request diagnostics to stdout
-
-TIP: Use 'cf help -a' to see all commands.
-설치하려면 'ibmcloud cf install'을(를) 사용하고 다른 Cloud Foundry CLI 버전을 사용하십시오.
-
 C:\Users\abcdu>ibmcloud cf install
-Cloud foundry CLI 버전 '6.51.0'이(가) 이미 설치되어 있음
+설치된 Cloud Foundry CLI 버전은 '6.41.0'입니다. 설치하고 최신 버전을(를) 사용하시겠습니까? [y/N] > y
+Cloud Foundry CLI 다운로드 시도 중...
+ 8.58 MiB / 8.58 MiB [==========================================================] 100.00% 4s
+9000100바이트 다운로드됨
+C:\Users\abcdu\.bluemix\tmp\cf_796883899\cf-cli_6.53.0_winx64.zip에 저장됨
+Installing Cloud Foundry CLI...
+확인
+Cloud Foundry CLI is successfully installed
 
-C:\Users\abcdu>ibmcloud cf help
-'cf help' 호출 중...
-
-cf.exe version 6.51.0+2acd15650.2020-04-07, Cloud Foundry command line tool
-Usage: cf.exe [global options] command [arguments...] [command options]
-
-Before getting started:
-  config    login,l      target,t
-  help,h    logout,lo
-
-Application lifecycle:
-  apps,a        run-task,rt    events
-  push,p        logs           set-env,se
-  start,st      ssh            create-app-manifest
-  stop,sp       app            delete,d
-  restart,rs    env,e
-  restage,rg    scale
-
-Services integration:
-  marketplace,m        create-user-provided-service,cups
-  services,s           update-user-provided-service,uups
-  create-service,cs    create-service-key,csk
-  update-service       delete-service-key,dsk
-  delete-service,ds    service-keys,sk
-  service              service-key
-  bind-service,bs      bind-route-service,brs
-  unbind-service,us    unbind-route-service,urs
-
-Route and domain management:
-  routes,r        delete-route    create-domain
-  domains         map-route
-  create-route    unmap-route
-
-Space management:
-  spaces         create-space    set-space-role
-  space-users    delete-space    unset-space-role
-
-Org management:
-  orgs,o       set-org-role
-  org-users    unset-org-role
-
-CLI plugin management:
-  plugins           add-plugin-repo      repo-plugins
-  install-plugin    list-plugin-repos
-
-Commands offered by installed plugins:
-
-Global options:
-  --help, -h                         Show help
-  -v                                 Print API request diagnostics to stdout
-
-TIP: Use 'cf help -a' to see all commands.
-설치하려면 'ibmcloud cf install'을(를) 사용하고 다른 Cloud Foundry CLI 버전을 사용하십시오.
 
 C:\Users\abcdu>ibmcloud login
 API 엔드포인트: https://cloud.ibm.com
@@ -177,29 +77,24 @@ Password>
 인증 중...
 확인
 
-대상 지정된 계정 yunjeong yeom's Account (id)
+대상 지정된 계정 yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
 
 
 API 엔드포인트:      https://cloud.ibm.com
 지역:                us-south
 사용자:              yeomyj99@daum.net
-계정:                yunjeong yeom's Account (id) 
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
 리소스 그룹:         대상으로 지정된 리소스 그룹이 없습니다.'ibmcloud target -g RESOURCE_GROUP' 명령을 사용하십시오.
 CF API 엔드포인트:
 조직:
 영역:
 
-새 버전 1.2.3을(를) 사용할 수 있습니다.
-릴리스 정보: https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/tag/v1.2.3
-팁: 업데이트 확인을 사용 안함으로 설정하려면 'ibmcloud config --check-version=false' 명령을 사용하십시오.
-
-업데이트하시겠습니까? [y/N] > N
 
 C:\Users\abcdu>ibmcloud resource groups
-yeomyj99@daum.net(으)로 id 계정에서 모든 리소스 그룹 검색 중...
+yeomyj99@daum.net(으)로 e1bf116c5ca241eca864ef7bf803a91c 계정에서 모든 리소스 그룹 검색 중...
 확인
-이름           기본 그룹   상태
-MyFirstRG      true        ACTIVE
+이름        ID                                 기본 그룹   상태
+MyFirstRG   da24f8ef54f54f17b24a62fb7c6d66ed   true        ACTIVE
 
 C:\Users\abcdu>ibmcloud target -g MyFirstRG
 대상 지정된 리소스 그룹 MyFirstRG
@@ -209,8 +104,37 @@ C:\Users\abcdu>ibmcloud target -g MyFirstRG
 API 엔드포인트:      https://cloud.ibm.com
 지역:                us-south
 사용자:              yeomyj99@daum.net
-계정:                yunjeong yeom's Account (id) 
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
 리소스 그룹:         MyFirstRG
 CF API 엔드포인트:
 조직:
 영역:
+
+C:\Users\abcdu>ibmcloud target -o yeomyj -s test
+대상 지정된 Cloud Foundry(https://api.us-south.cf.cloud.ibm.com)
+
+실패
+조직을 가져올 수 없음:
+Organization 'yeomyj'을(를) 찾을 수 없습니다.
+
+
+C:\Users\abcdu>ibmcloud target --cf
+대상 지정된 Cloud Foundry(https://api.us-south.cf.cloud.ibm.com)
+
+조직을 찾을 수 없습니다.
+대상 공용 CF 환경에서 조직을 작성하려면 ibmcloud account org-create ORG 명령을 사용하십시오.
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:   https://api.us-south.cf.cloud.ibm.com(API 버전: 2.153.0)
+조직:
+영역:
+
+C:\Users\abcdu>ibmcloud account org-create yeomyj
+yeomyj99@daum.net(으)로 yeomyj 조직 작성 중...
+실패
+서버에서 오류 응답입니다. 상태 코드: 409, 설명: (yeomyj)이(가) 이미 있으므로 조직을 작성할 수 없습니다..
