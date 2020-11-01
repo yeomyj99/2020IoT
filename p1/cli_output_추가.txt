@@ -1,0 +1,108 @@
+PS C:\WINDOWS\system32> ibmcloud login -r uk
+API 엔드포인트: https://cloud.ibm.com
+
+Email> yeomyj99@daum.net
+
+Password>
+인증 중...
+확인
+
+대상 지정된 계정 yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+리소스 그룹:         대상으로 지정된 리소스 그룹이 없습니다.'C:\Program Files\IBM\Cloud\bin\ibmcloud.exe target -g RESOURCE_GROUP' 명령을 사용하십시오.
+CF API 엔드포인트:
+조직:
+영역:
+실패
+지역을 가져올 수 없음:
+지역 'uk'을(를) 찾을 수 없습니다.
+
+PS C:\WINDOWS\system32> ibmcloud login
+API 엔드포인트: https://cloud.ibm.com
+
+Email> yeomyj99@daum.net
+
+Password>
+인증 중...
+확인
+
+대상 지정된 계정 yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+
+
+지역 선택(또는 Enter를 눌러 건너뜀):
+1. au-syd
+2. in-che
+3. jp-tok
+4. kr-seo
+5. eu-de
+6. eu-gb
+7. us-south
+8. us-east
+번호 입력> 6
+대상으로 지정된 지역 eu-gb
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                eu-gb
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+리소스 그룹:         대상으로 지정된 리소스 그룹이 없습니다.'C:\Program Files\IBM\Cloud\bin\ibmcloud.exe target -g RESOURCE_GROUP' 명령을 사용하십시오.
+CF API 엔드포인트:
+조직:
+영역:
+PS C:\WINDOWS\system32> ibmcloud target -g MyFirstRG
+대상 지정된 리소스 그룹 MyFirstRG
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                eu-gb
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:
+조직:
+영역:
+PS C:\WINDOWS\system32> ibmcloud target --cf
+대상 지정된 Cloud Foundry(https://api.eu-gb.cf.cloud.ibm.com)
+
+대상 지정된 조직 yeomyj
+
+
+영역 선택(또는 Enter를 눌러 건너뜀):
+1. dev
+2. test
+번호 입력> 2
+대상 지정된 영역 test
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                eu-gb
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:   https://api.eu-gb.cf.cloud.ibm.com(API 버전: 2.153.0)
+조직:                yeomyj
+영역:                test
+
+PS C:\WINDOWS\system32> ibmcloud target -o yeomyj -s test
+대상 지정된 조직 yeomyj
+
+대상 지정된 영역 test
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                eu-gb
+사용자:              yeomyj99@daum.net
+계정:                yunjeong yeom's Account (e1bf116c5ca241eca864ef7bf803a91c)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:   https://api.eu-gb.cf.cloud.ibm.com(API 버전: 2.153.0)
+조직:                yeomyj
+영역:                test
