@@ -1,0 +1,15 @@
+C:\Users\abcdu\curl>curl -X POST -u "apikey:2OpGZPok24p0UYBhI2BVUvLITWyJr28Oa_KSdqkdhI73" --header "Content-type:audio/wav" --data-binary @ko-KR_BroadbandModel_sample1.wav "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=ko-KR_BroadbandModel"
+{
+   "result_index": 0,
+   "results": [
+      {
+         "final": true,
+         "alternatives": [
+            {
+               "transcript": "네 명 숙박 할 건데 호텔 디럭스 룸은 다 찼다고 하셔서 그런데 혹시 싱글룸 두개로 예약은 가능한가요 ",
+               "confidence": 0.97
+            }
+         ]
+      }
+   ]
+}
