@@ -1,0 +1,10 @@
+{
+    "AcceptRanges": "bytes",
+    "LastModified": "2020-11-10T18:25:27+00:00",
+    "ContentLength": 79203,
+    "ETag": "\"31db8cbfc30aa5a64615f3cbc05ed857\"",
+    "ContentType": "image/jpeg",
+    "Metadata": {
+        "work": "IBM"
+    }
+}

@@ -1,0 +1,14 @@
+//key값의 일부는 *처리하였습니다.
+{
+  "apikey": "*P",
+  "cos_hmac_keys": {
+    "access_key_id": "*c",
+    "secret_access_key": "*6"
+  },
+  "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+  "iam_apikey_description": "Auto-generated for key *",
+  "iam_apikey_name": "YeomObj인증정보",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/*c::serviceid*",
+  "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/e*::"
+}
